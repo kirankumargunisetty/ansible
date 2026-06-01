@@ -1,6 +1,6 @@
 - name: demo on debug
   hosts: frontend
   tasks:
-  - name: hello kiran
-    debug:
-    - msg: Hello world!
+    - name: hello kiran
+      debug:
+      - msg: Hello world!
