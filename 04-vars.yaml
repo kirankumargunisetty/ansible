@@ -7,7 +7,7 @@
     DURATION: "150HRS"
   tasks: # tasks == module == collection
   - name: ping the server 
-      ping: 
+    ping: 
   tasks:
   - debug: 
       msg: "Hi , I am learing {{ COURSE }},Trainer is {{ TRAINER }},Duration is {{ DURATION }}"
