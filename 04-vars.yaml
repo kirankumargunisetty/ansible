@@ -5,8 +5,6 @@
     COURSE: "Anisble"
     TRAINER: "KIRAN"
     DURATION: "150HRS"
-  - name: ping the server 
-    ping: 
   tasks:
   - debug: 
       msg: "Hi , I am learing {{ COURSE }},Trainer is {{ TRAINER }},Duration is {{ DURATION }}"
