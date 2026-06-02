@@ -1,0 +1,20 @@
+- name: demo on promt
+  hosts: localhost
+  connection: local
+  vars_prompt:
+    - name: username
+      prompt: "please enter username"
+      private: false
+
+    - name: password
+      prompt: "Please Enter password"
+      private: true # with  this what we are entering it wont appear
+
+  tasks:
+  - name: print information
+    debug:
+      msg: "username is: {{ username }}, passwprd is: {{ password }}"
+
+
+
+
