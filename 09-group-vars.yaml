@@ -1,5 +1,5 @@
 - name: demo on inventpry variables
-  hosts: frontendvars # when it goes to get the host it will read localhost from inventory along with that local vars which are mentioned in inventory also will be loaded
+  hosts: frontendgvars # when it goes to get the host it will read localhost from inventory along with that local vars which are mentioned in inventory also will be loaded
   tasks:
   - name: print group inventory variable information
     debug:
