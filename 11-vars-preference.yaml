@@ -1,12 +1,12 @@
 - name: variable preference
-  hosts: fromtend
+  hosts: frontend
   vars:
     full_name: "siva from play"
   vars_files:
   - course.yaml
   vars_prompt:
     - name: full_name
-      prompt: "Please enter ypuor full_name"
+      prompt: "Please enter your full_name"
       private: false
   tasks:
   - name: print vars preference
