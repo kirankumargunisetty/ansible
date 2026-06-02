@@ -1,0 +1,16 @@
+- name: variable preference
+  hosts: fromtend
+  vars:
+    full_name: "siva from play"
+  vars_files:
+  - course.yaml
+  vars_prompt:
+    -name: full_name
+     prompt: "Please enter ypuor full_name"
+     private: false
+  tasks:
+  - name: print vars preference
+    vars:
+      full_name: "siva from task level"
+    debug:
+      msg: "Hi,{{ full_name }}"

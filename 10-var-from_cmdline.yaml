@@ -4,4 +4,4 @@
   tasks:
   - name: print name
     debug:
-      msg: "Hello {{ name }}"
+      msg: "Hello {{ name }}" # from server console we need to run the like this ansible-playbook -i inventory.ini -e "name='kiran'" 10-var-from_cmdline.yaml
