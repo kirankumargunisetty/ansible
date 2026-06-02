@@ -1,0 +1,7 @@
+- name: demo on inventpry variables
+  hosts: localhost # when it goes to get the host it will read localhost from inventory along with that local vars which are mentioned in inventory also will be loaded
+  connection: local
+  tasks:
+  - name: print inventory variable information
+    debug:
+      msg: "Hi , I am learning {{ COURSE }}, Trainer is {{ TRAINER }}, Duration is {{ DURATION  }}"
