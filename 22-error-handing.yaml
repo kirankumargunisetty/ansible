@@ -11,4 +11,4 @@
   - name: create user
     #command: useradd roboshop
     debug:
-      msg: "{{ users_output }}
+      msg: "{{ users_output }}"
