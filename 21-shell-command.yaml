@@ -8,3 +8,7 @@
   # 2. command module - > we dont get anything , just command will be executed
     #command: cat/etc/passwd | grep root # this command is having pipes so it should be executed in shell module as we gave command it will throw error
     shell: cat /etc/passwd | grep root
+    register: users_output # above command output will be strored in this var, by using register we can do this.
+  - name: print output
+    debug:
+      msg: "{{ users_output }}"
