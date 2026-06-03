@@ -1,0 +1,9 @@
+- name: demo on filters
+  hosts: localhost
+  connection: local
+  vars:
+    topics: Linux, shell, Ansible, Terraform
+  tasks:
+  - name: convert string to list
+    debug: 
+      msg: "Topics are: {{ topics | split(',') }}"
