@@ -1,0 +1,14 @@
+- name: demo on error handling
+# normally ansible will exit from the execution if it get any error
+  hosts: localhost
+  connection: local
+  tasks:
+  - name : check roboshop user exist or not
+    command: id roboshop
+    register: users_output
+    ignore_errors: true
+
+  - name: create user
+    #command: useradd roboshop
+    debug:
+      msg: "{{ users_output }}

@@ -14,5 +14,6 @@
       msg: "{{ users_output }}"
 
   - name: list files 
+  #command: ls -ltr > /tmp/files.txt this wont work as there is redirect symbol
     shell: ls -ltr > /tmp/files.txt
 
