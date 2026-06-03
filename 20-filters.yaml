@@ -22,7 +22,7 @@
         }
     ]
     full_name: G kiran kumar
-    ip_address: 1000.900.998.9987
+    ip_address: 174.90.78.17
   tasks:
   - name: convert string to list
     debug: 
@@ -46,5 +46,6 @@
 
   - name: check ipv4 address
     debug:
-      msg: "{{ ip_address | ansible.utils.ipv4 }}"    
+      msg: "{{ ip_address | ansible.utils.ipv4 }}"    #pip3.9 install netaddr this need to be insatlled for working ipv4 filter
+
 
