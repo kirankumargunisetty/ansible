@@ -1,0 +1,9 @@
+- name: create user
+# idempotency means irrespective of how many times we execute the command we get the same output
+  become: yes
+  hosts: localhost
+  connection: local
+  tasks: 
+  - name: create expense user
+    user:
+      name: expense # useradd expense
