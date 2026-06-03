@@ -39,7 +39,7 @@
     debug:
       msg: "{{ tagsList | items2dict }}"
 
-  - name: convert to uppercase
+  - name: convert lowercase to uppercase
     debug:
       msg: "{{ full_name | upper }}"
 
