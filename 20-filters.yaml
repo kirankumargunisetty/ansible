@@ -10,6 +10,6 @@
 
   - name: set default value
     debug:
-      msg: "Hi {{ Greeting | default('Good Morning') }}"
-      #msg: "Hi {{ Greeting }}"
+      msg: "Hi {{ Greeting | default('Good Morning') }}"# greetings is not defined anywhere in the script so if we give default values it take that only, or if we define greeting it will that value only
+      
 
