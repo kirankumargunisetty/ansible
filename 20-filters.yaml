@@ -38,7 +38,8 @@
   - name: convert list to map
     debug:
       msg: "{{ tagsList | items2dict }}"
-  - name: convert lower to upper
+
+  - name: convert lowercase to uppercase
     debug:
       msg: "{{ full_name | upper }}"
 
