@@ -30,11 +30,11 @@
     debug:
       msg: "Hi {{ Greeting | default('Good Morning') }}"# greetings is not defined anywhere in the script so if we give default values it take that only, or if we define greeting it will that value only
 
-  - name: vonvert mapp to list
+  - name: convert map to list
     debug:
       msg: "{{ tagMap | dict2items }}"
 
-  - name: vonvert mapp to list
+  - name: convert list to map
     debug:
       msg: "{{ tagList | items2dict }}"
 
