@@ -44,6 +44,10 @@
     debug:
       msg: "{{ full_name | upper }}"
 
+  - name: convert uppercaselowercase to lowercase
+    debug:
+      msg: "{{ full_name | lower }}"    
+
   - name: check ipv4 address
     debug:
       msg: "{{ ip_address | ansible.utils.ipv4 }}"    #pip3.9 install netaddr this need to be insatlled for working ipv4 filter
