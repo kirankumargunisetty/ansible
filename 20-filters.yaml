@@ -40,5 +40,5 @@
       msg: "{{ tagsList | items2dict }}"
   - name: convert lower to upper
     debug:
-      msg: "{{ full_name | uppercase }}"
+      msg: "{{ full_name | upper }}"
 
