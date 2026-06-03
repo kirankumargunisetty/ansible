@@ -7,4 +7,4 @@
   # 1.shell module -> we get complete shell env like variables, pipes(|), redirections(<<,>>), etc
   # 2. command module - > we dont get anything , just command will be executed
     #command: cat/etc/passwd | grep root # this command is having pipes so it should be executed in shell module as we gave command it will throw error
-    shell: cat/etc/passwd | grep root
+    shell: cat /etc/passwd | grep root
