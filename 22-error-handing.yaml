@@ -2,6 +2,7 @@
 # normally ansible will exit from the execution if it get any error
   hosts: localhost
   connection: local
+  become: yes
   tasks:
   - name : check roboshop user exist or not
     command: id roboshop
