@@ -3,6 +3,10 @@
   connection: local
   vars:
     topics: Linux, shell, Ansible, Terraform
+    tagMap:
+      name: Ansible
+      project: roboshop
+      environment: dev
   tasks:
   - name: convert string to list
     debug: 
@@ -11,5 +15,9 @@
   - name: set default value
     debug:
       msg: "Hi {{ Greeting | default('Good Morning') }}"# greetings is not defined anywhere in the script so if we give default values it take that only, or if we define greeting it will that value only
-      
+
+  - name: vonvert mapp to list
+    debug:
+      msg: "{{ tagMap | dict2items }}"
+         
 
