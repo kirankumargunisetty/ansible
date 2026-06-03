@@ -11,4 +11,5 @@
   - name: set default value
     debug:
       msg: "Hi {{ Greeting | default('Good Morning') }}"
-      
+      msg: "Hi {{ Greeting }}"
+
