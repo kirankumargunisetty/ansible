@@ -1,0 +1,10 @@
+- name: demo on shell vs command module
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: command test
+  # Ansible allows us to run linux commands if there is no module available
+  # 1.shell module -> we get complete shell env like variables, pipes(|), redirections(<<,>>), etc
+  # 2. command module - > we dont get anything , just command will be executed
+    #command: cat/etc/passwd | grep root # this command is having pipes so it should be executed in shell module as we gave command it will throw error
+    shell: cat/etc/passwd | grep root
