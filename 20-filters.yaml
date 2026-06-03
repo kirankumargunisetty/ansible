@@ -21,6 +21,7 @@
             "value": "dev"
         }
     ]
+  name: G kiran kumar
   tasks:
   - name: convert string to list
     debug: 
@@ -37,5 +38,7 @@
   - name: convert list to map
     debug:
       msg: "{{ tagsList | items2dict }}"
-
+  - name: convert lower to upper
+    debug:
+      msg: "{{ full_name | uppercase }}"
 
