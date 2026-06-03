@@ -21,7 +21,7 @@
             "value": "dev"
         }
     ]
-  name: G kiran kumar
+    name: G kiran kumar
   tasks:
   - name: convert string to list
     debug: 
