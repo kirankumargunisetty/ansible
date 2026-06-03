@@ -8,7 +8,11 @@
     register: users_output
     ignore_errors: true
 
-  - name: create user
+  - name: print user output
     #command: useradd roboshop
     debug:
       msg: "{{ users_output }}"
+
+  - name: create user
+    command: useradd roboshop 
+    when: users_output.rc != 0  
