@@ -1,0 +1,12 @@
+- name: conditions iusing ansible_facts
+  hosts: frontend
+  tasks:
+  - name: print iof RedHat
+    debug:
+      msg: "OS Family is RedHat"
+    when: ansible_facts.os_family == "RedHat"
+
+  - name: print if Debian
+    debug:
+      msg: "OS Family os Debian"
+    when: ansible_facts.os_family == "Debian"
