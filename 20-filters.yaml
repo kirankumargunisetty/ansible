@@ -22,6 +22,7 @@
         }
     ]
     full_name: G kiran kumar
+    ip_address: 1000.900.998.9987
   tasks:
   - name: convert string to list
     debug: 
@@ -42,4 +43,8 @@
   - name: convert lowercase to uppercase
     debug:
       msg: "{{ full_name | upper }}"
+
+  - name: check ipv4 address
+    debug:
+      msg: "{{ ip_address | ansible.utils.ipv4 }}"    
 
